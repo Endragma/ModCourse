@@ -1,0 +1,29 @@
+{
+  "item.modcourse.copper_ingot": "Copper Ingot",
+  "item.modcourse.copper_wire": "Copper Wire",
+  "item.modcourse.coppered_apple": "Coppered Apple",
+
+  "item.modcourse.copper_shovel": "Copper Shovel",
+  "item.modcourse.copper_axe": "Copper Axe",
+  "item.modcourse.copper_sword": "Copper Sword",
+  "item.modcourse.copper_hoe": "Copper Hoe",
+  "item.modcourse.copper_pickaxe": "Copper Pickaxe",
+  "item.modcourse.the_copperator": "The Copperator",
+
+  "item.modcourse.copper_helmet": "Copper Helmet",
+  "item.modcourse.copper_chestplate": "Copper Chestplate",
+  "item.modcourse.copper_leggings": "Copper Leggings",
+  "item.modcourse.copper_boots": "Copper Boots",
+
+  "block.modcourse.copper_block": "Copper Block",
+  "block.modcourse.copper_ore": "Copper Ore",
+
+  "block.modcourse.copper_stairs": "Copper Stairs",
+  "block.modcourse.copper_fence": "Copper Fence",
+  "block.modcourse.copper_fence_gate": "Copper Fence Gate",
+  "block.modcourse.copper_pressure_plate": "Copper Pressure Plate",
+  "block.modcourse.copper_slab": "Copper Slab",
+  "block.modcourse.copper_button": "Copper Button",
+
+  "itemGroup.courseTab": "Icaro's Tab"
+}

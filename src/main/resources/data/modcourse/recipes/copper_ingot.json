@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "",
+  "ingredients":
+  [
+    {"item": "modcourse:copper_block"}
+  ],
+  "result": {"item": "modcourse:copper_ingot","count": 9}
+}

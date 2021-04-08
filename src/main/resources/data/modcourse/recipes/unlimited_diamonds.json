@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "iii",
+    "ibi",
+    "iii"
+  ],
+  "key":
+    {
+      "i": {"item": "modcourse:copper_wire"},
+      "b": {"item": "modcourse:copper_block"}
+    },
+  "result": {"item": "minecraft:diamond","count": 999999}
+}
