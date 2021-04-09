@@ -23,6 +23,9 @@ public class ModItems
     public static final RegistryObject<Item> COPPERED_APPLE =
             Registration.ITEMS.register("coppered_apple",
             () -> new CopperedApple());
+    public static final RegistryObject<Item> ZUCCINI =
+            Registration.ITEMS.register("zuccini",
+                    () -> new Zuccini());
 
     /* Copper Tools */
     public static final RegistryObject<Item> COPPER_SHOVEL =
