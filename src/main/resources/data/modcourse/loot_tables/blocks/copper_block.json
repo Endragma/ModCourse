@@ -6,7 +6,32 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "modcourse:copper_block"
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.5
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6.0,
+                "max": 9.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "modcourse:copper_ingot"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+            "name": "modcourse:copper_wire"
         }
       ]
     }
