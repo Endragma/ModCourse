@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "modcourse:block/zuccini_crop_stage1"
+  }
+}

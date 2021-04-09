@@ -1,6 +1,7 @@
 package com.icarocampos.modcourse.item;
 
 import com.icarocampos.modcourse.ModCourse;
+import com.icarocampos.modcourse.block.ModBlocks;
 import com.icarocampos.modcourse.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -91,6 +92,11 @@ public class ModItems
                     () -> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.FEET,
                             new Item.Properties().group(ModCourse.COURSE_TAB)));
 
+    /*Crops*/
+    public static final RegistryObject<Item> ZUCCINI_SEED =
+            Registration.ITEMS.register("zuccini_seed",
+                    ()-> new BlockItem(ModBlocks.ZUCCINI_CROP.get(),
+                            new Item.Properties().group(ModCourse.COURSE_TAB)));
 
     public static void register() { }
 
