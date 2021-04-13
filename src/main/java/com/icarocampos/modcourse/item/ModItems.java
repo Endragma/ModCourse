@@ -2,6 +2,7 @@ package com.icarocampos.modcourse.item;
 
 import com.icarocampos.modcourse.ModCourse;
 import com.icarocampos.modcourse.block.ModBlocks;
+import com.icarocampos.modcourse.block.ModFluids;
 import com.icarocampos.modcourse.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -100,6 +101,14 @@ public class ModItems
             Registration.ITEMS.register("zuccini_seed",
                     ()-> new BlockItem(ModBlocks.ZUCCINI_CROP.get(),
                             new Item.Properties().group(ModCourse.COURSE_TAB)));
+
+    /*Fluids*/
+    public static final RegistryObject<Item> OIL_BUCKET =
+            Registration.ITEMS.register("oil_bucket",
+                    ()-> new BucketItem(ModFluids.OIL_FLUID::get,
+                            new Item.Properties().group(ModCourse.COURSE_TAB).maxStackSize(1)));
+
+
 
     public static void register() { }
 

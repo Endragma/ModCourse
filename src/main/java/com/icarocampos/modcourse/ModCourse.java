@@ -1,6 +1,7 @@
 package com.icarocampos.modcourse;
 
 import com.icarocampos.modcourse.block.ModBlocks;
+import com.icarocampos.modcourse.block.ModFluids;
 import com.icarocampos.modcourse.events.ModEvents;
 import com.icarocampos.modcourse.item.ModItems;
 import com.icarocampos.modcourse.util.Config;
@@ -55,6 +56,7 @@ public class ModCourse
         Registration.register();
         ModItems.register();
         ModBlocks.register();
+        ModFluids.register();
 
         MinecraftForge.EVENT_BUS.register((new ModEvents()));
 

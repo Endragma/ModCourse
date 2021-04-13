@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "modcourse:oil_flowing",
+    "modcourse:oil_fluid"
+  ]
+}

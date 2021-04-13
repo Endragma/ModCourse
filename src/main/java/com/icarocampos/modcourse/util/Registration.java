@@ -2,6 +2,7 @@ package com.icarocampos.modcourse.util;
 
 import com.icarocampos.modcourse.ModCourse;
 import net.minecraft.block.Block;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -14,11 +15,14 @@ public class Registration
             = DeferredRegister.create(ForgeRegistries.BLOCKS, ModCourse.MOD_ID);
     public static final DeferredRegister<Item> ITEMS
             = DeferredRegister.create(ForgeRegistries.ITEMS, ModCourse.MOD_ID);
+    public  static final DeferredRegister<Fluid> FLUIDS
+            = DeferredRegister.create(ForgeRegistries.FLUIDS, ModCourse.MOD_ID);
 
     public static void register()
     {
         IEventBus eventbus = FMLJavaModLoadingContext.get().getModEventBus();
         BLOCKS.register(eventbus);
         ITEMS.register(eventbus);
+        FLUIDS.register(eventbus);
     }
 }
