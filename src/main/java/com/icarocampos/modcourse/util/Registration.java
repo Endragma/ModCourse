@@ -18,7 +18,7 @@ public class Registration
     public  static final DeferredRegister<Fluid> FLUIDS
             = DeferredRegister.create(ForgeRegistries.FLUIDS, ModCourse.MOD_ID);
 
-    public static void register()
+    public static void init()
     {
         IEventBus eventbus = FMLJavaModLoadingContext.get().getModEventBus();
         BLOCKS.register(eventbus);

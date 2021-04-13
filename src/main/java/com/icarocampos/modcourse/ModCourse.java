@@ -53,7 +53,7 @@ public class ModCourse
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_CONFIG);
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.SERVER_CONFIG);
 
-        Registration.register();
+        Registration.init();
         ModItems.register();
         ModBlocks.register();
         ModFluids.register();
