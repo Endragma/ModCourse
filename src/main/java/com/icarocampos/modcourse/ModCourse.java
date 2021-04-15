@@ -7,6 +7,7 @@ import com.icarocampos.modcourse.item.ModItems;
 import com.icarocampos.modcourse.setup.ClientProxy;
 import com.icarocampos.modcourse.setup.IProxy;
 import com.icarocampos.modcourse.setup.ServerProxy;
+import com.icarocampos.modcourse.tileentity.ModTileEntities;
 import com.icarocampos.modcourse.util.Config;
 import com.icarocampos.modcourse.util.Registration;
 import net.minecraft.block.Block;
@@ -96,6 +97,7 @@ public class ModCourse
         ModItems.register();
         ModBlocks.register();
         ModFluids.register();
+        ModTileEntities.register();
 
 
         MinecraftForge.EVENT_BUS.register((new ModEvents()));
