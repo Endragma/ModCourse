@@ -2,6 +2,7 @@ package com.icarocampos.modcourse;
 
 import com.icarocampos.modcourse.block.ModBlocks;
 import com.icarocampos.modcourse.block.ModFluids;
+import com.icarocampos.modcourse.container.ModContainers;
 import com.icarocampos.modcourse.events.ModEvents;
 import com.icarocampos.modcourse.item.ModItems;
 import com.icarocampos.modcourse.setup.ClientProxy;
@@ -98,6 +99,7 @@ public class ModCourse
         ModBlocks.register();
         ModFluids.register();
         ModTileEntities.register();
+        ModContainers.register();
 
 
         MinecraftForge.EVENT_BUS.register((new ModEvents()));

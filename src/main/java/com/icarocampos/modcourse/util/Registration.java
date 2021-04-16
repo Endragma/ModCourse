@@ -3,6 +3,7 @@ package com.icarocampos.modcourse.util;
 import com.icarocampos.modcourse.ModCourse;
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
+import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +21,8 @@ public class Registration
             = DeferredRegister.create(ForgeRegistries.FLUIDS, ModCourse.MOD_ID);
     public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY_TYPES
             = DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, ModCourse.MOD_ID);
+    public static final DeferredRegister<ContainerType<?>> CONTAINERS
+            = DeferredRegister.create(ForgeRegistries.CONTAINERS, ModCourse.MOD_ID);
 
     public static void init()
     {
@@ -28,5 +31,6 @@ public class Registration
         ITEMS.register(eventbus);
         FLUIDS.register(eventbus);
         TILE_ENTITY_TYPES.register(eventbus);
+        CONTAINERS.register(eventbus);
     }
 }
