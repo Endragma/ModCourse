@@ -3,7 +3,6 @@ package com.icarocampos.modcourse.item;
 import com.icarocampos.modcourse.ModCourse;
 import com.icarocampos.modcourse.util.Config;
 import com.icarocampos.modcourse.util.KeyboardHelper;
-import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;

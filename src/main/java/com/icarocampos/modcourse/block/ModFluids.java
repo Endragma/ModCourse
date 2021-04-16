@@ -14,8 +14,6 @@ import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.fml.RegistryObject;
 
-import java.security.PublicKey;
-
 public class ModFluids
 {
     public static final ResourceLocation OIL_STILL_RL = new ResourceLocation(ModCourse.MOD_ID,
