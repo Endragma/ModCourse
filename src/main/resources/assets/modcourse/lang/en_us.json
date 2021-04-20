@@ -28,6 +28,11 @@
   "block.modcourse.zuccini_crop": "Zuccini Seeds",
   "item.modcourse.zuccini": "Zuccini",
 
+  "block.modcourse.redwood_log": "Redwood Log",
+  "block.modcourse.redwood_planks": "Redwood Planks",
+  "block.modcourse.redwood_leaves": "Redwood Leaves",
+  "block.modcourse.redwood_sapling": "Redwood Sapling",
+
   "item.modcourse.oil_bucket": "Oil Bucket",
 
   "block.modcourse.electrifier": "Electrifier",

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    " i ",
+    "   "
+  ],
+  "key": {"i": {"item": "modcourse:redwood_log"}},
+  "result": {"item": "modcourse:redwood_planks","count": 4}
+}
