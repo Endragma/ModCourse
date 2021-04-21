@@ -3,6 +3,8 @@ package com.icarocampos.modcourse;
 import com.icarocampos.modcourse.block.ModBlocks;
 import com.icarocampos.modcourse.block.ModFluids;
 import com.icarocampos.modcourse.container.ModContainers;
+import com.icarocampos.modcourse.entity.BuffaloEntity;
+import com.icarocampos.modcourse.entity.ModEntityTypes;
 import com.icarocampos.modcourse.events.ModEvents;
 import com.icarocampos.modcourse.item.ModItems;
 import com.icarocampos.modcourse.setup.ClientProxy;
@@ -12,11 +14,13 @@ import com.icarocampos.modcourse.tileentity.ModTileEntities;
 import com.icarocampos.modcourse.util.Config;
 import com.icarocampos.modcourse.util.Registration;
 import net.minecraft.block.Block;
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
@@ -64,10 +68,14 @@ public class ModCourse
 
         proxy.init();
 
+        DeferredWorkQueue.runLater(() -> {
+            GlobalEntityTypeAttributes.put(ModEntityTypes.BUFFALO.get(), BuffaloEntity.setCustomAttribute().create());
+        });
+
         loadConfigs();
     }
 
-    private void registerConfigs()
+        private void registerConfigs()
     {
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_CONFIG);
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.SERVER_CONFIG);
@@ -91,6 +99,7 @@ public class ModCourse
         ModFluids.register();
         ModTileEntities.register();
         ModContainers.register();
+        ModEntityTypes.register();
 
 
         MinecraftForge.EVENT_BUS.register((new ModEvents()));
