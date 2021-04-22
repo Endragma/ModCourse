@@ -3,6 +3,7 @@ package com.icarocampos.modcourse.item;
 import com.icarocampos.modcourse.ModCourse;
 import com.icarocampos.modcourse.block.ModBlocks;
 import com.icarocampos.modcourse.block.ModFluids;
+import com.icarocampos.modcourse.entity.ModEntityTypes;
 import com.icarocampos.modcourse.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -108,7 +109,11 @@ public class ModItems
                     ()-> new BucketItem(ModFluids.OIL_FLUID::get,
                             new Item.Properties().group(ModCourse.COURSE_TAB).maxStackSize(1)));
 
-
+    /*Entity Eggs*/
+    public static final RegistryObject<ModSpawnEggItem> BUFFALO_SPAWNING_EGG =
+            Registration.ITEMS.register("buffalo_spawn_egg",
+                    ()-> new ModSpawnEggItem(ModEntityTypes.BUFFALO,0xF02F4A,0x7034F1,
+                            new Item.Properties().group(ModCourse.COURSE_TAB)));
 
     public static void register() { }
 

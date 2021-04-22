@@ -5,6 +5,7 @@ import com.icarocampos.modcourse.block.ModBlocks;
 import com.icarocampos.modcourse.container.ModContainers;
 import com.icarocampos.modcourse.entity.ModEntityTypes;
 import com.icarocampos.modcourse.entity.render.BuffaloRenderer;
+import com.icarocampos.modcourse.item.ModSpawnEggItem;
 import com.icarocampos.modcourse.screens.ElectrifierScreen;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ScreenManager;
@@ -29,6 +30,8 @@ public class ClientProxy implements IProxy
         ScreenManager.registerFactory(ModContainers.ELECTRIFIER_CONTAINER.get(), ElectrifierScreen::new);
 
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.BUFFALO.get(), BuffaloRenderer::new);
+
+        ModSpawnEggItem.initSpawnEggs();
     }
 
     @Override
