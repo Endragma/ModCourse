@@ -7,6 +7,8 @@ import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,8 +30,12 @@ public class Registration
             = DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, ModCourse.MOD_ID);
     public static final DeferredRegister<ContainerType<?>> CONTAINERS
             = DeferredRegister.create(ForgeRegistries.CONTAINERS, ModCourse.MOD_ID);
-    public static DeferredRegister<EntityType<?>> ENTITY_TYPES
+    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES
             = DeferredRegister.create(ForgeRegistries.ENTITIES, ModCourse.MOD_ID);
+    public static final DeferredRegister<Biome> BIOMES
+            = DeferredRegister.create(ForgeRegistries.BIOMES, ModCourse.MOD_ID);
+    public static final DeferredRegister<SurfaceBuilder<?>> SURFACE_BUILDERS
+            = DeferredRegister.create(ForgeRegistries.SURFACE_BUILDERS, ModCourse.MOD_ID);
 
 
 
@@ -44,5 +50,7 @@ public class Registration
         TILE_ENTITY_TYPES.register(eventbus);
         CONTAINERS.register(eventbus);
         ENTITY_TYPES.register(eventbus);
+        BIOMES.register(eventbus);
+        SURFACE_BUILDERS.register(eventbus);
     }
 }

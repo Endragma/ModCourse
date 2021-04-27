@@ -13,6 +13,8 @@ import com.icarocampos.modcourse.setup.ServerProxy;
 import com.icarocampos.modcourse.tileentity.ModTileEntities;
 import com.icarocampos.modcourse.util.Config;
 import com.icarocampos.modcourse.util.Registration;
+import com.icarocampos.modcourse.world.biome.ModBiomes;
+import com.icarocampos.modcourse.world.biome.ModSurfaceBuilders;
 import net.minecraft.block.Block;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
@@ -97,6 +99,8 @@ public class ModCourse
         ModItems.register();
         ModBlocks.register();
         ModFluids.register();
+        ModBiomes.register();
+        ModSurfaceBuilders.register();
         ModTileEntities.register();
         ModContainers.register();
         ModEntityTypes.register();
