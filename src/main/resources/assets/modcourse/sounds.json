@@ -1,0 +1,7 @@
+{
+  "small_explosion": {
+    "category": "blocks",
+    "subtitle": "modcourse.small_explosion",
+    "sounds": ["modcourse:small_explosion"]
+  }
+}

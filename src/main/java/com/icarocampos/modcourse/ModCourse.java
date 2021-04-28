@@ -10,6 +10,7 @@ import com.icarocampos.modcourse.item.ModItems;
 import com.icarocampos.modcourse.setup.ClientProxy;
 import com.icarocampos.modcourse.setup.IProxy;
 import com.icarocampos.modcourse.setup.ServerProxy;
+import com.icarocampos.modcourse.sound.ModSoundEvents;
 import com.icarocampos.modcourse.tileentity.ModTileEntities;
 import com.icarocampos.modcourse.util.Config;
 import com.icarocampos.modcourse.util.Registration;
@@ -101,6 +102,7 @@ public class ModCourse
         ModFluids.register();
         ModBiomes.register();
         ModSurfaceBuilders.register();
+        ModSoundEvents.register();
         ModTileEntities.register();
         ModContainers.register();
         ModEntityTypes.register();

@@ -2,11 +2,14 @@ package com.icarocampos.modcourse.util;
 
 import com.icarocampos.modcourse.ModCourse;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.util.SoundEvent;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -36,6 +39,8 @@ public class Registration
             = DeferredRegister.create(ForgeRegistries.BIOMES, ModCourse.MOD_ID);
     public static final DeferredRegister<SurfaceBuilder<?>> SURFACE_BUILDERS
             = DeferredRegister.create(ForgeRegistries.SURFACE_BUILDERS, ModCourse.MOD_ID);
+    public static final DeferredRegister<SoundEvent> SOUND_EVENTS
+            = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, ModCourse.MOD_ID);
 
 
 
@@ -52,5 +57,6 @@ public class Registration
         ENTITY_TYPES.register(eventbus);
         BIOMES.register(eventbus);
         SURFACE_BUILDERS.register(eventbus);
+        SOUND_EVENTS.register(eventbus);
     }
 }

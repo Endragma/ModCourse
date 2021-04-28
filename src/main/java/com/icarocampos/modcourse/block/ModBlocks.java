@@ -18,7 +18,7 @@ public class ModBlocks
             .hardnessAndResistance(3f,10f).sound(SoundType.METAL)));
 
     public static final RegistryObject <Block> COPPER_ORE = register("copper_ore",
-            () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE)
+            () -> new CopperOre(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE)
             .hardnessAndResistance(3f,10f).sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> COPPER_STAIRS =
