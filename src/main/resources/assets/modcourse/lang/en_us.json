@@ -9,6 +9,7 @@
   "item.modcourse.copper_hoe": "Copper Hoe",
   "item.modcourse.copper_pickaxe": "Copper Pickaxe",
   "item.modcourse.the_copperator": "The Copperator",
+  "item.modcourse.copper_club": "Copper Club",
 
   "item.modcourse.copper_helmet": "Copper Helmet",
   "item.modcourse.copper_chestplate": "Copper Chestplate",
@@ -24,6 +25,8 @@
   "block.modcourse.copper_pressure_plate": "Copper Pressure Plate",
   "block.modcourse.copper_slab": "Copper Slab",
   "block.modcourse.copper_button": "Copper Button",
+
+  "enchantment.modcourse.bluntness": "Bluntness",
 
   "block.modcourse.zuccini_crop": "Zuccini Seeds",
   "item.modcourse.zuccini": "Zuccini",

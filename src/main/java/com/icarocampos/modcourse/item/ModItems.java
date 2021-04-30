@@ -4,6 +4,7 @@ import com.icarocampos.modcourse.ModCourse;
 import com.icarocampos.modcourse.block.ModBlocks;
 import com.icarocampos.modcourse.block.ModFluids;
 import com.icarocampos.modcourse.entity.ModEntityTypes;
+import com.icarocampos.modcourse.item.weapon.BluntItem;
 import com.icarocampos.modcourse.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -41,6 +42,13 @@ public class ModItems
     public static final RegistryObject<Item> COPPER_SWORD =
             Registration.ITEMS.register("copper_sword",
                     () -> new SwordItem(ModItemTier.COPPER, 2,0f,
+                            new Item.Properties()
+                                    .defaultMaxDamage(150)
+                                    .group(ModCourse.COURSE_TAB)));
+
+    public static final RegistryObject<Item> COPPER_CLUB =
+            Registration.ITEMS.register("copper_club",
+                    () -> new CopperClub(ModItemTier.COPPER, 2,0f,
                             new Item.Properties()
                                     .defaultMaxDamage(150)
                                     .group(ModCourse.COURSE_TAB)));

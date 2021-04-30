@@ -3,6 +3,7 @@ package com.icarocampos.modcourse;
 import com.icarocampos.modcourse.block.ModBlocks;
 import com.icarocampos.modcourse.block.ModFluids;
 import com.icarocampos.modcourse.container.ModContainers;
+import com.icarocampos.modcourse.enchantment.ModEnchantments;
 import com.icarocampos.modcourse.entity.BuffaloEntity;
 import com.icarocampos.modcourse.entity.ModEntityTypes;
 import com.icarocampos.modcourse.events.ModEvents;
@@ -106,6 +107,7 @@ public class ModCourse
         ModTileEntities.register();
         ModContainers.register();
         ModEntityTypes.register();
+        ModEnchantments.register();
 
 
         MinecraftForge.EVENT_BUS.register((new ModEvents()));

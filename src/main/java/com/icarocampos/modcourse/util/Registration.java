@@ -3,6 +3,7 @@ package com.icarocampos.modcourse.util;
 import com.icarocampos.modcourse.ModCourse;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.EntityType;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.container.ContainerType;
@@ -41,7 +42,8 @@ public class Registration
             = DeferredRegister.create(ForgeRegistries.SURFACE_BUILDERS, ModCourse.MOD_ID);
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS
             = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, ModCourse.MOD_ID);
-
+    public static final DeferredRegister<Enchantment> ENCHANTMENTS
+            = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, ModCourse.MOD_ID);
 
 
     //All deferred registers created above needs to be registered through this format below.
@@ -58,5 +60,6 @@ public class Registration
         BIOMES.register(eventbus);
         SURFACE_BUILDERS.register(eventbus);
         SOUND_EVENTS.register(eventbus);
+        ENCHANTMENTS.register(eventbus);
     }
 }
