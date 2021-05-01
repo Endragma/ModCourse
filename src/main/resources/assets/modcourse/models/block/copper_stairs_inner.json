@@ -1,8 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "modcourse:block/copper_block",
-    "top": "modcourse:block/copper_block",
-    "side": "modcourse:block/copper_block"
-  }
-}

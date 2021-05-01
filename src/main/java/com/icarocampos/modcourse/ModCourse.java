@@ -42,7 +42,7 @@ public class ModCourse
 {
     public static final String MOD_ID = "modcourse";
 
-    public static final ItemGroup COURSE_TAB = new ItemGroup("courseTab") {
+    public static final ItemGroup COURSE_TAB = new ItemGroup("coursetab") {
         @Override
         public ItemStack createIcon()
         {

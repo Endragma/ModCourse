@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": {"model": "modcourse:block/electrifier"},
-    "facing=south": {"model": "modcourse:block/electrifier","y": 180},
-    "facing=west": {"model": "modcourse:block/electrifier","y": 270},
-    "facing=east": {"model": "modcourse:block/electrifier","y": 90}
-  }
-}

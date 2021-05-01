@@ -1,6 +1,0 @@
-{
-  "parent": "blcok/cube_all",
-  "textures": {
-    "all": "modcourse:block/oil"
-  }
-}
