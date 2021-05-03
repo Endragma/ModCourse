@@ -10,6 +10,10 @@ import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 @Mod.EventBusSubscriber(modid = ModCourse.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators
 {
+    private static final String[] LOCALE_CODES = new String[]{
+            "en_us"
+    };
+
     private DataGenerators(){}
 
     @SubscribeEvent
@@ -18,6 +22,8 @@ public class DataGenerators
         DataGenerator generator = event.getGenerator();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
+        addLanguageProviders(generator);
+
         generator.addProvider(new ModBlockStateProvider(generator, existingFileHelper));
         generator.addProvider(new ModItemModelProvider(generator, existingFileHelper));
 
@@ -25,5 +31,15 @@ public class DataGenerators
 
         generator.addProvider(block_tags);
         generator.addProvider(new ModItemTagsProvider(generator, block_tags, existingFileHelper));
+
+        generator.addProvider(new ModLootTableProvider(generator));
+    }
+
+    private static void addLanguageProviders(DataGenerator generator)
+    {
+        for (String locale : LOCALE_CODES)
+        {
+            generator.addProvider(new ModLanguageProvider(generator, locale));
+        }
     }
 }
