@@ -2,6 +2,7 @@ package com.icarocampos.modcourse.data;
 
 import com.icarocampos.modcourse.ModCourse;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.IDataProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -31,8 +32,9 @@ public class DataGenerators
 
         generator.addProvider(block_tags);
         generator.addProvider(new ModItemTagsProvider(generator, block_tags, existingFileHelper));
-
+        generator.addProvider(new ModRecipeProvider(generator));
         generator.addProvider(new ModLootTableProvider(generator));
+        generator.addProvider(new ModAdvancementsProvider(generator));
     }
 
     private static void addLanguageProviders(DataGenerator generator)

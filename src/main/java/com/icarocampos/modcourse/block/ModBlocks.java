@@ -21,21 +21,21 @@ public class ModBlocks
             () -> new CopperOre(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2).harvestTool(ToolType.PICKAXE)
             .hardnessAndResistance(3f,10f).sound(SoundType.STONE)));
 
-    public static final RegistryObject<Block> COPPER_STAIRS =
+    public static final RegistryObject<StairsBlock> COPPER_STAIRS =
             register("copper_stairs", () -> new StairsBlock(() -> ModBlocks.COPPER_BLOCK.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.IRON)));
 
-    public static final RegistryObject<Block> COPPER_FENCE =
+    public static final RegistryObject<FenceBlock> COPPER_FENCE =
             register("copper_fence", () -> new FenceBlock((AbstractBlock.Properties.create(Material.IRON))));
 
-    public static final RegistryObject<Block> COPPER_FENCE_GATE =
+    public static final RegistryObject<FenceGateBlock> COPPER_FENCE_GATE =
             register("copper_fence_gate", () -> new FenceGateBlock((AbstractBlock.Properties.create(Material.IRON))));
 
-    public static final RegistryObject<Block> COPPER_PRESSURE_PLATE =
+    public static final RegistryObject<PressurePlateBlock> COPPER_PRESSURE_PLATE =
             register("copper_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     AbstractBlock.Properties.create(Material.IRON)));
 
-    public static final RegistryObject<Block> COPPER_SLAB =
+    public static final RegistryObject<SlabBlock> COPPER_SLAB =
             register("copper_slab", () -> new SlabBlock((AbstractBlock.Properties.create(Material.IRON))));
 
     public static final RegistryObject<Block> COPPER_BUTTON =
@@ -52,7 +52,7 @@ public class ModBlocks
     public static final RegistryObject<Block> REDWOOD_PLANKS = register("redwood_planks",
             ()-> new Block(AbstractBlock.Properties.from((Blocks.OAK_PLANKS))));
 
-    public static final RegistryObject<Block> REDWOOD_LOG = register("redwood_log",
+    public static final RegistryObject<RotatedPillarBlock> REDWOOD_LOG = register("redwood_log",
             ()-> new RotatedPillarBlock(AbstractBlock.Properties.from((Blocks.OAK_WOOD))));
 
     public static final RegistryObject<Block> REDWOOD_LEAVES = register("redwood_leaves",

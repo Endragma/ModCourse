@@ -2,7 +2,9 @@ package com.icarocampos.modcourse.data;
 
 import com.icarocampos.modcourse.ModCourse;
 import com.icarocampos.modcourse.block.ModBlocks;
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
@@ -23,11 +25,11 @@ public class ModItemModelProvider extends ItemModelProvider
     {
         withExistingParent("copper_block", modLoc("block/copper_block"));
         withExistingParent("copper_ore", modLoc("block/copper_ore"));
+        singleTexture("copper_pressure_plate", mcLoc("block/pressure_plate_up"), modLoc("block/copper_block"));
+        singleTexture("copper_pressure_plate_down", mcLoc("block/pressure_plate_down"), modLoc("block/copper_block"));
         singleTexture("copper_button", mcLoc("block/button"), modLoc("block/copper_block"));
         singleTexture("copper_button_inventory", mcLoc("block/button_inventory"), modLoc("block/copper_block"));
         singleTexture("copper_button_pressed", mcLoc("block/button_pressed"), modLoc("block/copper_block"));
-        singleTexture("copper_pressure_plate", mcLoc("block/pressure_plate_up"), modLoc("block/copper_block"));
-        singleTexture("copper_pressure_plate_down", mcLoc("block/pressure_plate_down"), modLoc("block/copper_block"));
         slab("copper_slab",modLoc("block/copper_block"), modLoc("block/copper_block"),modLoc("block/copper_block"));
         slabTop("copper_slab_top",modLoc("block/copper_block"),modLoc("block/copper_block"),modLoc("block/copper_block"));
         stairs("copper_stairs",modLoc("block/copper_block"),modLoc("block/copper_block"),modLoc("block/copper_block"));
@@ -35,7 +37,7 @@ public class ModItemModelProvider extends ItemModelProvider
         stairsOuter("copper_stairs_outer",modLoc("block/copper_block"),modLoc("block/copper_block"),modLoc("block/copper_block"));
         fencePost("copper_fence_post", modLoc("block/copper_block"));
         fenceSide("copper_fence_side", modLoc("block/copper_block"));
-        fenceInventory("copper_fence_inventory", modLoc("block/copper_block"));
+        fenceInventory("copper_fence_inventory",modLoc("block/copper_block"));
         fenceGate("copper_fence_gate",modLoc("block/copper_block"));
         fenceGateOpen("copper_fence_gate_open",modLoc("block/copper_block"));
         fenceGateWall("copper_fence_gate_wall",modLoc("block/copper_block"));
@@ -66,7 +68,6 @@ public class ModItemModelProvider extends ItemModelProvider
         builder(itemGenerated,"copper_chestplate");
         builder(itemGenerated,"copper_leggings");
         builder(itemGenerated,"copper_boots");
-
         ModelFile leaves = getExistingFile(mcLoc("block/leaves"));
         builderLeaves(leaves,"redwood_leaves");
 

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "side": "modcourse:block/copper_block",
+    "bottom": "modcourse:block/copper_block",
+    "top": "modcourse:block/copper_block"
+  }
+}

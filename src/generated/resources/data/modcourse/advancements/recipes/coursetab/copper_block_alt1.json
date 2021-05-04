@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "modcourse:copper_block_alt1"
+    ]
+  },
+  "criteria": {
+    "copper_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "modcourse:copper_ingot"
+          }
+        ]
+      }
+    },
+    "copper_wire": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "modcourse:copper_wire"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "modcourse:copper_block_alt1"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "copper_ingot",
+      "copper_wire",
+      "has_the_recipe"
+    ]
+  ]
+}

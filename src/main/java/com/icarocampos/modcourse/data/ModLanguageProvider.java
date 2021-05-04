@@ -50,6 +50,8 @@ public class ModLanguageProvider extends LanguageProvider
                 add("block.modcourse.redwood_sapling", "Redwood Sapling");
                 add("item.modcourse.buffalo_spawn_egg", "Buffalo Spawn Egg");
                 add("item.modcourse.copper_club", "Copper Club");
+                add("advancements.story.copper_block.title", "Coppering");
+                add("advancements.story.copper_block.description", "Acquire Copper Blocks");
                 break;
             default:
                 break;

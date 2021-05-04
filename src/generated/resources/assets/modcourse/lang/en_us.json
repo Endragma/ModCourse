@@ -1,4 +1,6 @@
 {
+  "advancements.story.copper_block.description": "Acquire Copper Blocks",
+  "advancements.story.copper_block.title": "Coppering",
   "block.modcourse.copper_block": "Copper Block",
   "block.modcourse.copper_button": "Copper Button",
   "block.modcourse.copper_fence": "Copper Fence",
